@@ -2,7 +2,10 @@
 (function() {
     'use strict';
 
-    var AppsShowcase = angular.module("AppsShowcase", ["ngRoute"]);
+    var AppsShowcase = angular.module("AppsShowcase", [
+        "ngRoute",
+        "ngResource"
+    ]);
 
     AppsShowcase.config(["$routeProvider", function($routeProvider) {
         $routeProvider
@@ -22,7 +25,16 @@
                 templateUrl: "src/pages/events/events.list.html",
                 controller: "EventsCtrl"
             })
+            .when("/login", {
+                templateUrl: "src/pages/login/login.html",
+                controller: "LoginCtrl"
+            })
             .otherwise({redirectTo: "/"})
     }]);
 
+    AppsShowcase.constant("config", {
+        api: {
+            url: "http://ec2-52-28-69-136.eu-central-1.compute.amazonaws.com/"
+        }
+    })
 }());

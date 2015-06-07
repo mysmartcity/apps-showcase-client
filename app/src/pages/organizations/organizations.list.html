@@ -1,1 +1,19 @@
-<h2>organiations</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4" ng-repeat="organization in organizations | filter:query ">
+            <div class="thumbnail">
+                <!--<a href="#/market/{{ idMarket }}/productEdit/{{ product.product.id }}">-->
+                    <!--<span class="glyphicon glyphicon-edit edit_pencil_product"></span>-->
+                <!--</a>-->
+                <a href="#/organization/{{ organization.id }}">
+                    <img ng-src="{{ organization.imageUrl }}"  alt="{{organization.name}}" class="img-responsive"/>
+                    <div class="caption">
+                        <h4>{{ organization.name | limitTo:35 }}<span ng-show="organization.name.length > 35">...</span> </h4>
+                        <p>{{ organization.description | limitTo:130 }} <span ng-show="organization.description.length > 130">...</span></p>
+                    </div>
+                </a>
+                <a ng-href="http://{{ organization.website }}" style="padding: 10px;">{{ organization.website }}</a>
+            </div>
+        </div>
+    </div>
+</div>

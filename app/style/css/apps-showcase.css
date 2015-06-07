@@ -2,3 +2,7 @@
 body {
     margin-top: 60px;
 }
+
+.thumbnail a div.caption p {
+    text-align: justify;
+}
