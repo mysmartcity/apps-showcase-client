@@ -6,3 +6,11 @@ body {
 .thumbnail a div.caption p {
     text-align: justify;
 }
+
+.padding-top {
+    padding-top: 30px;
+}
+
+.project-thumb {
+    max-width: 120px;
+}

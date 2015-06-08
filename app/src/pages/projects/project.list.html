@@ -1,3 +1,16 @@
-<div class="container">
-    <h2>Project list</h2>
+<div class="container padding-top">
+    <div class="media" ng-repeat="project in projects | filter:query ">
+        <div class="media-left">
+            <a href="#/project/{{ project.id }}">
+                <img ng-src="{{ project.imageUrl }}"  alt="{{project.name}}" class="media-object project-thumb"/>
+            </a>
+        </div>
+        <div class="media-body">
+            <h4>{{ project.name }}</h4>
+            <p>{{ project.description }}</p>
+            <div id="technologies">
+                <span class="label label-info" ng-repeat="technology in project.technologies" style="margin: 5px;">{{ technology | limitTo:30 }}</span>
+            </div>
+        </div>
+    </div>
 </div>
