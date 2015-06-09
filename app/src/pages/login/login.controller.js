@@ -2,8 +2,10 @@
     'use strict';
 
     app.controller("LoginCtrl", [
-        function() {
-
+        "$scope",
+        "config",
+        function($scope, config) {
+            $scope.googleLoginUrl = config.api.url + "oauth/google"
         }
     ]);
 
