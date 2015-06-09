@@ -7,10 +7,18 @@ body {
     text-align: justify;
 }
 
+.project-thumb {
+    max-width: 120px;
+}
+
+.btn.google {
+    background-color: #dd4b39;
+}
+
 .padding-top {
     padding-top: 30px;
 }
 
-.project-thumb {
-    max-width: 120px;
+.margin-left-sm {
+    margin-left: 15px;
 }
