@@ -5,7 +5,8 @@
     app.controller("OrganizationsCtrl", [
         "$scope",
         "AJAX",
-        function($scope, AJAX) {
+        "Notification",
+        function($scope, AJAX, Notification) {
             //
             // Get list of organizations
             //
@@ -22,8 +23,7 @@
                     })
                 },
                 function onError(error) {
-                    // TODO: toastr
-                    console.log(error);
+                    Notification.error("Organizatiile nu au putut fi citite");
                 }
             )
 

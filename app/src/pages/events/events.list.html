@@ -1,3 +1,14 @@
-<div class="container">
-    <h2>events</h2>
+<div class="container padding-top">
+    <div class="media" ng-repeat="event in events | filter:query ">
+        <div class="media-left">
+            <a href="#/event/{{ event.id }}">
+                <img ng-src="{{ event.imageUrl }}"  alt="{{event.name}}" class="media-object project-thumb"/>
+            </a>
+        </div>
+        <div class="media-body">
+            <h4>{{ event.name }}</h4>
+            <p>{{ event.description }}</p>
+            <p>{{ event.city }}, {{ event.startDate }}</p>
+        </div>
+    </div>
 </div>

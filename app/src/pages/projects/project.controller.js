@@ -5,7 +5,8 @@
     app.controller("ProjectCtrl", [
         "$scope",
         "AJAX",
-        function($scope, AJAX) {
+        "Notification",
+        function($scope, AJAX, Notification) {
             AJAX.project.query(
                 function onSuccess(data) {
                     $scope.projects = data;
@@ -25,8 +26,7 @@
                     })
                 },
                 function onError(error) {
-                    // TODO: toastr
-                    console.log(error);
+                    Notification.error("Proiectele nu au putut fi citite");
                 }
             )
         }]);
