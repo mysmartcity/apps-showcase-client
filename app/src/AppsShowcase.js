@@ -29,9 +29,9 @@
                 templateUrl: "src/pages/events/events.list.html",
                 controller: "EventsCtrl"
             })
-            .when("/event/:id", {
-                templateUrl: "src/pages/events/events.details.html",
-                controller: "EventsDetailsCtrl"
+            .when("/event/:idEvent", {
+                templateUrl: "src/pages/events/event.details.html",
+                controller: "EventDetailsCtrl"
             })
             .when("/login", {
                 templateUrl: "src/pages/login/login.html",

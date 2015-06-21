@@ -14,8 +14,6 @@
             AJAX.project.get({idProject: idProject},
                 function onSuccess(data) {
                     $scope.project = data;
-
-                    console.log(data);
                     //
                     // Add a default image
                     //

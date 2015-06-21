@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>{{ event.name }}</h2>
+
+    <p>{{ event.description }}</p>
+    <p><strong>Categorie: </strong>{{ event.category }}</p>
+    <p><strong>Agenda: </strong><a href="{{ event.agenda }}">{{ event.agenda }}</a></p>
+    <p><strong>Status: </strong>{{ event.status }}</p>
+
+    <p><strong>Ultima modificare: </strong>{{ event.updated }}</p>
+
+    <p><strong>Data Inceput: </strong>{{ event.startDate }}</p>
+    <p><strong>Data Sfarsit: </strong>{{ event.endDate }}</p>
+
+    <p><strong>Pagina web: </strong><a href="{{ event.eventWebPage }}">{{ event.eventWebPage }}</a></p>
+    <p><strong>Orasul: </strong>{{ event.city }}</p>
+    <p><strong>Locatia: </strong>{{ event.location }}</p>
+</div>
