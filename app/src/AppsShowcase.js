@@ -17,6 +17,10 @@
                 templateUrl: "src/pages/projects/project.list.html",
                 controller: "ProjectCtrl"
             })
+            .when("/project/:idProject", {
+                templateUrl: "src/pages/projects/project.details.html",
+                controller: "ProjectDetailsCtrl"
+            })
             .when("/organizations", {
                 templateUrl: "src/pages/organizations/organizations.list.html",
                 controller: "OrganizationsCtrl"
@@ -24,6 +28,10 @@
             .when("/events", {
                 templateUrl: "src/pages/events/events.list.html",
                 controller: "EventsCtrl"
+            })
+            .when("/event/:id", {
+                templateUrl: "src/pages/events/events.details.html",
+                controller: "EventsDetailsCtrl"
             })
             .when("/login", {
                 templateUrl: "src/pages/login/login.html",
