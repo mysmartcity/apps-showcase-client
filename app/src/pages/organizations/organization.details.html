@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>{{ organization.name }}</h2>
+
+    <p>{{ organization.description }}</p>
+    <p><strong>Ultima modificare: </strong>{{ organization.updated }}</p>
+
+    <p><strong>Pagina web: </strong><a ng-href="{{ organization.website }}">{{ organization.website }}</a></p>
+
+    <div class="social">
+        <a ng-href="{{ organization.facebook }}"><span class="fa fa-facebook-square"></span></a>
+    </div>
+
+</div>

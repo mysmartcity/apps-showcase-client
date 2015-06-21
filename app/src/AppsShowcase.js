@@ -25,6 +25,10 @@
                 templateUrl: "src/pages/organizations/organizations.list.html",
                 controller: "OrganizationsCtrl"
             })
+            .when("/organization/:idOrganization", {
+                templateUrl: "src/pages/organizations/organization.details.html",
+                controller: "OrganizationDetailsCtrl"
+            })
             .when("/events", {
                 templateUrl: "src/pages/events/events.list.html",
                 controller: "EventsCtrl"

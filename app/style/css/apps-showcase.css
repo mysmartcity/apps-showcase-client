@@ -23,3 +23,11 @@ body {
 .margin-left-sm {
     margin-left: 15px;
 }
+
+.social {
+    font-size: 30px;
+}
+
+.social .fa-facebook-square {
+    color: #3b5998;
+}
