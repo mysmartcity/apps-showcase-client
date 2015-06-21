@@ -7,7 +7,7 @@
     <p><strong>Pagina web: </strong><a ng-href="{{ organization.website }}">{{ organization.website }}</a></p>
 
     <div class="social">
-        <a ng-href="{{ organization.facebook }}"><span class="fa fa-facebook-square"></span></a>
+        <a ng-href="{{ organization.facebook }}" ng-show="organization.facebook"><span class="fa fa-facebook-square"></span></a>
     </div>
 
 </div>
